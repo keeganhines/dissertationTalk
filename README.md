@@ -1,4 +1,4 @@
-sympTalk
+Dissertation
 ========
 
-My talk for the INS Symposium 2014; served [here] (http://keeganhines.github.io/sympTalk/).
+My dissertation defense Talk; served [here] (http://keeganhines.github.io/dissertationTalk/).
