@@ -101,6 +101,10 @@ width:400px;
   color:"#000000"
 }
 
+.reactive_text:hover{
+color:#CC2904;
+}
+
 #cam_studies_text{
 padding:0 0 0 50px;
 }
@@ -159,6 +163,11 @@ padding:40px 20px 20px 0;
   padding: 0 0 0 20%;
 }
 
+.cent{
+margin:auto;
+width:50%;
+}
+
 strong{
   color:#000000;
 }
@@ -167,4 +176,5 @@ body p, body li{
   color :#000000;
 }
 */
+
 

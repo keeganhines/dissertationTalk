@@ -32,31 +32,30 @@
     <!-- Should I move this to a Local Layout File? -->
     <slide class="title-slide segue nobackground">
       <hgroup class="auto-fadein">
-        <h1>Modeling molecules</h1>
-        <h2>Bayesian approaches to understanding protein biophysics</h2>
-        <p>Keegan Hines, Tom Middendorf, Rick Aldrich</p>
+        <h1>Bayesian Approaches For Modeling Protein Biophysics</h1>
+        <h2>Keegan Hines</h2>
+        <h2>Aldrich Lab</h2>
+        
       </hgroup>
     </slide>
 
     
     
-    <slide class="" id="slide-2" style="background:;">
-  
-  <div>
-  <img src="./assets/static/Keegan.png" height=400 width=400>
+ <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Outline</h2>
+  </hgroup>
+ 
+  <div id="trans_text" >
+   <p class="reactive_text" style="font-size:125%;">Background</p>
+   <br>
+   <p class="reactive_text" style="font-size:125%;">Parameter Identifiability in Nonlinear Biophysical Models</p>
+    <br>
+   <p class="reactive_text" style="font-size:125%;">Modeling Single Molecule Time Series Using Nonparametric Bayesian Inference</p>   
   </div>
-  
   <!-- Presenter Notes -->
 </slide>
-    
-    <slide class="title-slide segue nobackground">
-      <hgroup class="auto-fadein">
-        <h1>Modeling molecules</h1>
-        <h2>Bayesian approaches to understanding protein biophysics</h2>
-        <p>Keegan Hines, Tom Middendorf, Rick Aldrich</p>
-      </hgroup>
-    </slide>
-    <!-- SLIDES -->
+
 
 
 <slide class="" id="slide-2" style="background:;">
@@ -109,6 +108,22 @@
     <p>Physiological relevance-  we only need to account for some of this complexity</p>
   </div>
   <!-- Presenter Notes -->
+</slide>
+
+
+<slide>
+  <h2>Modeling Natural Systems</h2>
+  
+  <div class="img_block">
+  <img src="./assets/static/intro_modeling.png" height=340 width=830>
+  </div>
+  
+</slide>
+
+<slide style="background:;">
+  <div class="text_block">
+    <h2> Parameter Identifiability in Nonlinear Biophysical Models</h2>
+  </div>
 </slide>
 
 
@@ -313,18 +328,6 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="" style="background:;">
-  <hgroup>
-    <h2>Additional Applications</h2>
-  </hgroup>
- <div id="mcmc1_text">
-  <p> Hidden Markov Models</p>
- </div>
-  
-  <img src="./assets/static/hmm.png" height=500 width=900>
-  
-  <!-- Presenter Notes -->
-</slide>
 
 <slide class="" id="" style="background:;">
   <hgroup>
@@ -357,11 +360,217 @@
  </ul>
  </div>
   
+ 
+</slide>
+
+
+<slide style="background:;">
+  <div class="text_block">
+    <h2> Modeling Single Molecule Time Series Using Nonparametric Bayesian Inference</h2>
+  </div>
+</slide>
+
+<slide style="background:;">
+  <hgroup>
+    <h2>Single Molecule Measurements</h2>
+  </hgroup>
+  <div >
+    <img src="./assets/static/smFig_final.png" height=550 width=800>
+  </div>
+</slide>
+
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Modeling Single Molecule Time Series</h2>
+  </hgroup>
+  <div style="overflow:hidden;" class="container">
+    <div class="two_block_L img_block"><img src="./assets/static/mods1b.png" width=400 height=400 > </div>
+    <div class="two_block_R text_block">
+      <p align="center" >Recall, we only need to account for some of the complexity available to the protein. </p>
+      <br>
+        <p align="center" >We imagine the protein accesses a relatively small number of biophysically distinct states. </p>
+    </div>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Modeling Single Molecule Time Series</h2>
+  </hgroup>
+  <div style="overflow:hidden;" class="container">
+    <div class="two_block_L img_block"><img src="./assets/static/mods1b.png" width=400 height=400 > </div>
+    <div class="two_block_R text_block">
+      <p align="center" style="font-size:150%;">But how do we decide how many states and what model to use? </p>
+    </div>
+  </div>
+</slide>
+  
+  
+<slide style="background:;">
+  <hgroup>
+    <h2>Nonparametric Bayes</h2>
+  </hgroup>
+  
+   <div id="trans_text" >
+    <p>Rely on a flexible class of infinite dimensional probability distributions - <strong>the Dirichlet process</strong></p>
+    <br>
+   <p >We can <strong>extract structure</strong> from data, instead of assuming models beforehand</p>
+  </div>
+</slide>
+
+<slide style="background:;">
+  <h2>Dirichlet Process Mixture Model</h2>
+    
+    
+    <iframe src="http://spark.rstudio.com/khines/dpmm/"
+style="max-width:100%"
+width="100%"
+height="750px"
+scrolling="no"
+frameborder="no"
+seamless="seamless"
+></iframe>
+  
+</slide>
+
+<slide style="background:;">
+  <hgroup>
+    <h2>Dirichlet Process</h2>
+  </hgroup>
+  
+   <div id="trans_text" >
+    <p>Provides an infinite dimensional probability distribution</p>
+    <br>
+   <p >But has useful clustering properties when modeling finite data</p>
+  </div>
+</slide>
+
+
+<slide style="background:;">
+  <h2>Stick Breaking Process</h2>
+    
+    
+    <iframe src="http://spark.rstudio.com/khines/sb/"
+style="max-width:100%"
+width="100%"
+height="750px"
+scrolling="no"
+frameborder="no"
+seamless="seamless"
+></iframe>
+  
+</slide>
+
+
+<slide>
+  <h2>Hidden Markov Models</h2>
+  <div>
+    <img src="./assets/static/HMM.png" width=900 height=600>
+  </div>
+  
+</slide>
+
+
+<slide>
+  <h2>Infinite Hidden Markov Model</h2>
+  
+  <div id="trans_text" >
+    <p>We now model the transition matrix as the bi-infinite <strong>Hierarchical Dirichlet Process</strong></p>
+    <br>
+   <p >Our model now specifies transitions to and from an infininte number of hidden states</p>
+   <br>
+    <p>Using this infinite model allows us to <strong>discover</strong> the number of hidden states in a time series </p>
+  </div>
+</slide>
+  
+  
+<slide style="background:;">
+  <h2>Infinite Hidden Markov Model</h2>
+   <div class='cent'>
+    <img src="./assets/static/iHMMfig.png" width=500 height=475>
+  </div>
+  <p>In each of these cases, we can detect the presence of distinct hidden states.</p>
+  
+
+</slide>
+  
+  
+<slide>
+  <h2>Aggregated Markov Model</h2>
+  <div>
+    <img src="./assets/static/AMM.png" width=900 height=550>
+  </div>
+</slide>
+
+<slide>
+  <h2>Infinite Aggregated Markov Model</h2>
+  
+  <div id="trans_text" >
+    <p>We think there's only two conductance states (open and closed), but an unknown number of hidden states </p>
+    <br>
+    <p>Again, we now model the transition matrix as the bi-infinite <strong>Hierarchical Dirichlet Process</strong></p>
+    <br>
+   <p >Our model now specifies transitions to and from an infininte number of hidden states, each of which appears as either open or closed</p>
+   <br>
+    <p>Using this infinite model allows us to <strong>discover</strong> the number of hidden states in single channel recording </p>
+  </div>
+</slide>
+
+
+<slide>
+  <h2>Infinite Aggregated Markov Model</h2>
+  <div class='cent'>
+    <img src="./assets/static/npb_iAMM_ex.png" width=550 height=500>
+  </div>
+  <p>With simulated data, we can indeed discover hidden states based only on their different dynamics</p>
+</slide>  
+  
+  
+<slide>
+  <h2>Infinite Aggregated Markov Model</h2>
+  <div class='cent'>
+    <img src="./assets/static/npb_sc_iAMM1.png" width=500 height=500>
+  </div>
+  <p>Seems to work with real BK data...</p>
+</slide>    
+  
+  <slide>
+  <h2>Infinite Aggregated Markov Model</h2>
+  <div class='cent'>
+    <img  src="./assets/static/npb_iAMM_all.png" width=500 height=500 >
+  </div>
+  <p>This Nonparametric Bayes approach uncovers the complexity of ion channel gating</p>
+</slide>    
+  
+ <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Conclusions</h2>
+  </hgroup>
+ <div id="concl_text">
+ <ul>
+  <li> <strong>Powerful</strong> experimental methods allow us to measure the properties of proteins at the single molecule level</li>
+  <li> Developing <strong>rigorous</strong> and <strong>general</strong> tools for the analysis of such data remains an open challenge</li>
+  <li> Nonparametric Bayes methods can be used to <strong>discover</strong> structure in data instead of assuming models</li>
+  <li> These methods were <strong>convincingly</strong> demonstrated with data from single channel recordings, single molecule FRET and single molecule photobleaching</li>
+  <li> An <strong>exciting</strong> new paradigm for studying molecular biophysics  </li> 
+ </ul>
+ </div>
+  
+ 
+</slide>
+
+<slide>
+  <h2>Acknowledgements</h2>
+</slide> 
+  
   <!-- Presenter Notes -->
 </slide>
 
 
-    <slide class="backdrop"></sli>
+    <slide class="backdrop"></slide>
   </slides>
 
   <!--[if IE]>
