@@ -118,6 +118,9 @@
   <img src="./assets/static/intro_modeling.png" height=340 width=830>
   </div>
   
+  <div>
+  <p class='citation'>Imagery stolen from Jim Crutchfield lecture notes</p>
+ </div>
 </slide>
 
 <slide style="background:;">
@@ -237,16 +240,7 @@
 </slide>
 
 
-<slide class="" id="" style="background:;">
-  
- <h2>Markov chain Monte Carlo</h2>
-  <iframe src="http://spark.rstudio.com/khines/mcmc/"> </iframe>
-  <div id="mcmc1_text">
-  <p> Estimate a probability distribution by drawing samples from it. </p>
- </div>
-  
-  <!-- Presenter Notes -->
-</slide>
+
 
  
 <slide class="" id="" style="background:;">
@@ -328,6 +322,18 @@
   <!-- Presenter Notes -->
 </slide>
 
+<slide>
+  <h2>Model Selection and Experimental Design</h2>
+  
+  <div class="img_block">
+  <img src="./assets/static/intro_modeling2.png" height=250 width=630>
+  </div>
+  
+  <div>
+  
+  <p>Modeling now becomes an iterative process, where non-identifiability forces innovative experimentation</p>
+  </div>
+</slide>
 
 <slide class="" id="" style="background:;">
   <hgroup>
@@ -336,8 +342,7 @@
   <div style="overflow:hidden;" class="container">
     <div class="two_block_L img_block"><img src="./assets/static/cam_str.png" width=400 height=400 > </div>
     <div  class="two_block_R" id="MS_text">
-      <p align="center" > Determining non-identifiability forces the investigator to consider simpler models or to design innovative experimentation to provide data which can better constrain the parameters. </p>
-      <br>
+    <br>
       <br>
       <p align="center" >In the case of calcium binding to calmodulin, novel experiments have been developed to measure site specific binding curves (Jenni Greeson-Bernier).</p>
     
@@ -352,11 +357,11 @@
   </hgroup>
  <div id="concl_text">
  <ul>
-  <li> Mechanistic models of proteins systems are important, though merely fitting data to models is insufficient: fits may not be unique</li>
-  <li> Non-identifiability is a concern not only for large and complex models, but also for extremely simple 2- and 3-parameter biophysical systems</li>
-  <li> New methods are required to determine the accuracy and identifiabilty of nonlinear models </li>
-  <li> Bayesian inference (& MCMC) is well suited to provide accurate parameter estimates and a direct assessment of identifiability</li>
-  <li> This approach will yield more accurate modeling and will force more innovative experimentation</li>
+  <li> Mechanistic models of proteins systems are important, though merely fitting data to models is insufficient: <strong>fits may not be unique</strong></li>
+  <li> Non-identifiability <strong>is a concern</strong> not only for large and complex models, but also <strong>for extremely simple</strong> 2- and 3-parameter biophysical systems</li>
+  <li> <strong>New methods are required</strong> to determine the accuracy and identifiabilty of nonlinear models </li>
+  <li> <strong>Bayesian inference (& MCMC)</strong> is well suited to provide accurate parameter estimates and a direct assessment of identifiability</li>
+  <li> This approach will yield more <strong>accurate modeling</strong> and will force more <strong>innovative experimentation</strong></li>
  </ul>
  </div>
   
@@ -375,7 +380,7 @@
     <h2>Single Molecule Measurements</h2>
   </hgroup>
   <div >
-    <img src="./assets/static/smFig_final.png" height=550 width=800>
+    <img src="./assets/static/smFig_final.png" height=500 width=900>
   </div>
 </slide>
 
@@ -418,23 +423,11 @@
     <p>Rely on a flexible class of infinite dimensional probability distributions - <strong>the Dirichlet process</strong></p>
     <br>
    <p >We can <strong>extract structure</strong> from data, instead of assuming models beforehand</p>
+   <br>
+    <p><strong>Structure</strong> might refer to hidden closed and open states in single channel recordings, or to conformational states in FRET traces, or to bleaching events in photobleaching traces </p>
   </div>
 </slide>
 
-<slide style="background:;">
-  <h2>Dirichlet Process Mixture Model</h2>
-    
-    
-    <iframe src="http://spark.rstudio.com/khines/dpmm/"
-style="max-width:100%"
-width="100%"
-height="750px"
-scrolling="no"
-frameborder="no"
-seamless="seamless"
-></iframe>
-  
-</slide>
 
 <slide style="background:;">
   <hgroup>
@@ -468,7 +461,15 @@ seamless="seamless"
 <slide>
   <h2>Hidden Markov Models</h2>
   <div>
-    <img src="./assets/static/HMM.png" width=900 height=600>
+    <img src="./assets/static/HMM.png" width=900 height=500>
+  </div>
+  
+</slide>
+
+<slide>
+  <h2>Hidden Markov Models</h2>
+  <div>
+    <img src="./assets/static/HMM2.png" width=900 height=500>
   </div>
   
 </slide>
@@ -523,7 +524,7 @@ seamless="seamless"
 <slide>
   <h2>Infinite Aggregated Markov Model</h2>
   <div class='cent'>
-    <img src="./assets/static/npb_iAMM_ex.png" width=550 height=500>
+    <img src="./assets/static/npb_iAMM_ex2.png" width=550 height=500>
   </div>
   <p>With simulated data, we can indeed discover hidden states based only on their different dynamics</p>
 </slide>  
@@ -534,7 +535,7 @@ seamless="seamless"
   <div class='cent'>
     <img src="./assets/static/npb_sc_iAMM1.png" width=500 height=500>
   </div>
-  <p>Seems to work with real BK data...</p>
+  <p>Application to BK channel data</p>
 </slide>    
   
   <slide>
@@ -542,7 +543,7 @@ seamless="seamless"
   <div class='cent'>
     <img  src="./assets/static/npb_iAMM_all.png" width=500 height=500 >
   </div>
-  <p>This Nonparametric Bayes approach uncovers the complexity of ion channel gating</p>
+  <p>Nonparametric Bayes approach uncovers the complexity of ion channel gating</p>
 </slide>    
   
  <slide class="" id="" style="background:;">
